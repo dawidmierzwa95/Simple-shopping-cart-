@@ -1,0 +1,107 @@
+$marginTop: 80px;
+
+body {
+  font-family: ITCAvantGardePro, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  margin-top: $marginTop;
+}
+
+.wrapper {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color:#fff;
+}
+
+.menu {
+    margin-top: $marginTop;
+}
+
+.cart {
+  padding: 30px 30px;
+  border-radius: 5px;
+  box-shadow: 7px 7px 40px rgba(51,51,51,0.3);
+  background-color: #fff;
+  .cart__image {
+    width: 100%;
+  }
+  .cart__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  .cart__price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #34b84f;
+  }
+}
+
+.element {
+  &.element--product {
+    .element__img {
+      width: 100%;
+      height: 200px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+    .element__price {
+      margin: 10px 0 0 0;
+      color: #333;
+      font-size: 11px;
+      font-weight: normal;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .element__title {
+      font-size: 20px;
+      margin: 0;
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}
+
+.button {
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 40px;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 200;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  &.button--buy {
+    background-color: #34b84f;
+  }
+  &.button--icon {
+    &:hover {
+      &:after {
+        color: #fff;
+        right: 26px;
+        top: 15px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f054";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        opacity: 1;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+      }
+    }
+  }
+}
